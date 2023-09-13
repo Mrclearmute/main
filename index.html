@@ -7,15 +7,19 @@
 
             My first website
 
+            button onclick="SayTextOfV()"> Click to show version /button
+
         </title>
+
         <meta name="description" content="Yay">
 
         <style>
 
             #cikolata{
-                color: white;
+                color: rgb(56, 163, 165);
                 font-size: 30px;
                 margin-top: 15px;
+                font-family: Helvetica, sans-serif;
             }
 
             .accountBackroundColor {
@@ -24,13 +28,16 @@
             } 
 
             body {
-                background-color: rgb(38, 38, 38);
+                background-color: rgb(79, 109, 122);
             }
 
             .userImage {
+                margin-top: 40px;
                 width: 300px;
                 border-radius: 150px;
-                stroke: white;
+                border-width: 7px;
+                border-color: aliceblue;
+                stroke: rgb(56, 163, 165);
             }
 
             .userinfo {
@@ -40,9 +47,38 @@
             }
 
             .userInfoText {
-                color: white;
+                color: rgb(219, 233, 238);
                 margin-top: 5px;
                 margin-bottom: 5px;
+                font-family: Helvetica, sans-serif;
+            }
+
+            .userTextBox {
+                float: inline-start;
+                width: 400px;
+                height: 300px;
+                padding: 100px;
+                border-radius: 10px;
+                margin-left: 50px;
+                margin-right: 40px;
+                background-color: rgb(235, 235, 211);
+                color: rgb(151, 136, 151);
+                font-size: 19px;
+                font-family: Helvetica, sans-serif;
+            }
+
+            .userImageBox {
+                float: inline-start;
+                max-width:  100%;
+                max-height: 100%;
+                padding: 100%;
+                border-radius: 10px;
+                margin-left: 50px;
+                margin-right: 40px;
+                background-color: rgb(235, 235, 211);
+                color: rgb(151, 136, 151);
+                font-size: 19px;
+                font-family: Helvetica, sans-serif;
             }
 
         </style>
@@ -50,20 +86,24 @@
             function SayTextOfV() {
                 alert('Hello, to the v1.1 of my webside');
             }
-        </script>
+
+         </script>
     </head>
 
     <body>
         <section class="userinfo">
-            <img src="backgroundAcount.jpg" alt="accountBackroundColor", class="accountBackroundColor">
-            <img src="userImage.jpeg" alt="userImage", class="userImage">
+            <img src="Leader.jpg" alt="userImage", class="userImage">
             <h1 id="cikolata"> Mrclearmute </h1>
             <p class="userInfoText"> @Mrclearmute </p>
-            <p class="userInfoText"> coder </p>
+            <p class="userInfoText"> Coder </p>
             <p class="userInfoText"> Merhaba, websiteme </p>
-       
-            <button onclick="SayTextOfV()"> Click to show version </button>
         </section>
+
+        <p class="userTextBox"> Here is my Projects. Hope you guys like it. </p>
+        <img src="Bageri.png" alt="v1", class="userImageBox">
+        <img src="Bageri2.png" alt="v2", class="userImageBox">
+        <img src="Bageri3.png" alt="v2.1", class="userImageBox">
+        <img src="Bageri4.png" alt="v3", class="userImageBox">
     </body>
 
 </html>
